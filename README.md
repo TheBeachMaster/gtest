@@ -4,7 +4,10 @@ Build and Test C++ libraries with Google Test Framework
 > This repo should provide a basic understanding of how to use Google Test Framework, and Linking libraries using CMake Build tool
  
 > Build Status 
- 
+
+
+[![Travis](https://img.shields.io/travis/TheBeachMaster/gtest.svg?style=for-the-badge)](https://travis-ci.org/TheBeachMaster/gtest/)
+  
 
 > Basics 
 
