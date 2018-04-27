@@ -9,7 +9,10 @@ addons:
     - g++-4.9
     - cmake
 compiler: 
- - g++ 
+ - g++
+
+cache:  
+  - ccache
 script: 
     - sudo mkdir build; sudo mkdir out
     - cd build 
