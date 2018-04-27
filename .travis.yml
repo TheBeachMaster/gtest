@@ -1,0 +1,21 @@
+sudo: enabled 
+language: cpp 
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    - llvm-toolchain-precise-3.7
+    packages:
+    - g++-4.9
+    - cmake
+compiler: 
+ - g++ 
+script: 
+    - sudo mkdir build; sudo mkdir out
+    - cd build 
+    - sudo cmake -DDO_TEST=ON ..
+    - sudo make
+    - cd ../out
+    - sudo ./test_*
+os: 
+- linux
